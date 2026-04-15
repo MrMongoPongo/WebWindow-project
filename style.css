@@ -1,0 +1,161 @@
+ body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    #game-container {
+        background: white;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        max-width: 800px;
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    #info-panel {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        gap: 20px;
+    }
+
+    .player-info {
+        background: #f0f0f0;
+        padding: 15px;
+        border-radius: 10px;
+        flex: 1;
+        text-align: center;
+    }
+
+    .player-info h3 {
+        margin: 0 0 10px 0;
+        color: #555;
+    }
+
+    .player-info p {
+        margin: 5px 0;
+        font-size: 16px;
+    }
+
+    #current-player {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 20px 0;
+        color: #667eea;
+    }
+
+    #roll-btn {
+        display: block;
+        margin: 20px auto;
+        padding: 15px 40px;
+        font-size: 20px;
+        background: #667eea;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+    #roll-btn:hover {
+        background: #764ba2;
+        transform: scale(1.05);
+    }
+
+    #roll-btn:disabled {
+        background: #ccc;
+        cursor: not-allowed;
+    }
+
+    #dice-result {
+        text-align: center;
+        font-size: 50px;
+        margin: 20px 0;
+        min-height: 60px;
+    }
+
+    #message {
+        text-align: center;
+        font-size: 18px;
+        color: #333;
+        min-height: 50px;
+        margin: 20px 0;
+        font-weight: bold;
+    }
+
+    #board {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        margin: 30px 0;
+    }
+
+    .cell {
+        aspect-ratio: 1;
+        border: 3px solid #333;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        font-weight: bold;
+        position: relative;
+        transition: all 0.3s;
+    }
+
+    .cell:hover {
+        transform: scale(1.05);
+    }
+
+    .start { background: #4ade80; }
+    .normal { background: #60a5fa; }
+    .bonus { background: #fbbf24; }
+    .penalty { background: #f87171; }
+    .owned1 { border: 5px solid #3b82f6; }
+    .owned2 { border: 5px solid #ef4444; }
+
+    .players {
+        position: absolute;
+        bottom: 5px;
+        display: flex;
+        gap: 5px;
+    }
+
+    .player-marker {
+        font-size: 24px;
+    }
+
+    button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 30px;
+        font-size: 16px;
+        background: #10b981;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #059669;
+    }
+
+    .cell-label {
+        font-size: 10px;
+        margin-top: 5px;
+    }

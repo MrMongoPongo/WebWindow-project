@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Prosta gra monopoli</title>
+</head>
+<body>
+    <div id="game-container">
+        <h1>🎲 Prosta gra monopoli</h1>
+        
+        <div id="info-panel">
+            <div class="player-info">
+                <h3>Gracz 1 (🔵)</h3>
+                <p>Pieniądze: <span id="player1-money">1000</span> 💰</p>
+                <p>Pozycja: <span id="player1-position">0</span></p>
+            </div>
+            
+            <div class="player-info">
+                <h3>Gracz 2 (🔴)</h3>
+                <p>Pieniądze: <span id="player2-money">1000</span> 💰</p>
+                <p>Pozycja: <span id="player2-position">0</span></p>
+            </div>
+        </div>
+
+        <div id="current-player">
+            Kolej gracza: <span id="turn">1</span>
+        </div>
+
+        <button id="roll-btn" onclick="rollDice()">🎲 Rzuć kostką</button>
+        
+        <div id="dice-result"></div>
+        <div id="message"></div>
+
+        <div id="board">
+            <!-- Plansza zostanie utworzona w JavaScript -->
+        </div>
+
+        <button onclick="resetGame()">🔄 Nowa gra</button>
+    </div>
+</body>
+
+<script src="javascript.js">
+
+</script>
+
+</html>
